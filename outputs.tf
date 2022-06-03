@@ -12,7 +12,7 @@ output "hello_world_lambda_function" {
 }
 output "photo_table_dynamo" {
   description = "A DynamoDB table to store photos"
-  value       = aws_dynamodb_table.photos-table.name 
+  value       = aws_dynamodb_table.photos-table.name
 }
 
 output "base_url" {
