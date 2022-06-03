@@ -1,8 +1,12 @@
 // Lambda function code
 
+const random = require('random-number-generator')
 module.exports.handler = async (event) => {
-  console.log('Event: ', event);
-  let responseMessage = 'Hello, World!';
+
+  const num = random(10000)
+
+  const responseMessage = 'Hello, World! What a success!!!';
+  const message = `Random Number: ${num}`;
 
   return {
     statusCode: 200,
@@ -10,7 +14,7 @@ module.exports.handler = async (event) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      message: responseMessage,
+      message,
     }),
   }
 }
