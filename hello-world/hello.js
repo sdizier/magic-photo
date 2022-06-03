@@ -14,7 +14,7 @@ module.exports.handler = async (event) => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      message,
+      message: `Random Number: ${num}`,
     }),
   }
 }
