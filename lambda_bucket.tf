@@ -8,6 +8,7 @@ resource "aws_s3_bucket" "lambda_bucket" {
 
   force_destroy = true
 }
+
 resource "aws_s3_bucket_acl" "lambda_bucket_acl" {
   bucket = random_pet.lambda_bucket_name.id
 

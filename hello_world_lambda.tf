@@ -1,4 +1,3 @@
-
 data "archive_file" "hello_world_zip" {
   type        = "zip"
   source_dir  = "./hello-world"
